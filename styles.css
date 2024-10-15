@@ -1,0 +1,243 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Renk Değişkenleri */
+:root {
+    --primary-color: #6A0DAD; /* Mor */
+    --secondary-color: #8A2BE2; /* Lavanta */
+    --background-color: #000000; /* Siyah */
+    --text-color: #FFFFFF; /* Beyaz */
+    --hover-color: #4B0082; /* Koyu Mor */
+    --border-color: #333333; /* Koyu Gri */
+}
+
+/* Tema stilleri */
+[data-theme="dark-purple"] {
+    --primary-color: #6A0DAD;
+    --secondary-color: #8A2BE2;
+    --background-color: #000000;
+    --text-color: #FFFFFF;
+}
+
+[data-theme="white-blue"] {
+    --primary-color: #1E90FF;
+    --secondary-color: #87CEEB;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+}
+
+[data-theme="dark-red"] {
+    --primary-color: #8B0000;
+    --secondary-color: #DC143C;
+    --background-color: #2F4F4F;
+    --text-color: #FFFFFF;
+}
+
+[data-theme="green-gray"] {
+    --primary-color: #2E8B57;
+    --secondary-color: #8FBC8F;
+    --background-color: #F5F5F5;
+    --text-color: #000000;
+}
+
+/* Bilgilendirme Banner */
+.info-banner {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--hover-color);
+    transform: scale(1.1); /* Büyütme efekti */
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+/* Bölüm Stillendirme */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Hakkımızda Bölümü */
+.about-container {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Vizyon ve Misyon Bölümü */
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.vision, .mission {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.vision:hover, .mission:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Başarılar Bölümü */
+.achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.achievements-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.achievement {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Hover efekti */
+}
+
+.achievement:hover {
+    transform: scale(1.05); /* Büyütme efekti */
+}
+
+.achievement i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Alt Bilgiler */
+.school-info {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Bilgilendirme Banner */
+.info-banner p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Düğme Stilleri */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05); /* Büyütme efekti */
+}
+
+/* Responsive tasarım ayarları */
+@media (max-width: 768px) {
+    .vision-mission {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vision, .mission {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .achievements-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+footer p {
+    margin: 0;
+    padding: 10px;
+    font-size: 0.9em; /* Küçük metin boyutu */
+    color: #E0E0E0; /* Açık renk */
+    text-align: center; /* Ortala */
+}
+
